@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/backg"    tools:context="com.example.hotelmanagement.UserRegister">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manager Registration Form"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/abc"
+        android:layout_below="@+id/txt_login">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manager Id"
+        android:id="@+id/reg_mid"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:layout_marginTop="16dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_mid_field"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/reg_mid"
+        android:textSize="25dp"
+        android:inputType="number"
+        android:layout_alignLeft="@+id/mid"
+        android:background="#ffffff"
+        android:layout_alignStart="@+id/mid"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:id="@+id/tv_fname"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/reg_mid_field"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="25dp"
+        android:ems="10"
+        android:id="@+id/reg_mid_name_field"
+        android:background="#ffffff"
+        android:layout_below="@+id/tv_fname"
+        android:layout_alignLeft="@+id/tv_password"
+        android:layout_alignStart="@+id/tv_password"
+        android:layout_marginTop="5dp" />
+
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Password"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:layout_below="@+id/reg_mid_mobile"
+        android:layout_alignRight="@+id/tv_mobile"
+        android:layout_alignEnd="@+id/tv_mobile" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:textSize="25dp"
+        android:maxLength="6"
+        android:ems="10"
+        android:id="@+id/password_field"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/tv_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/reg_mid_name_field"
+        android:layout_alignEnd="@+id/reg_mid_name_field" />
+
+    <EditText
+        android:id="@+id/confirm_pwd_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:ems="10"
+        android:maxLength="6"
+        android:inputType="numberPassword"
+        android:textSize="25dp"
+        android:layout_alignBaseline="@+id/password_field"
+        android:layout_alignBottom="@+id/password_field"
+        android:layout_alignLeft="@+id/reg_mid_hotel_field"
+        android:layout_alignStart="@+id/reg_mid_hotel_field" />
+
+    <EditText
+        android:id="@+id/reg_mid_hotel_field"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="25dp"
+        android:layout_alignBaseline="@+id/reg_mid_name_field"
+        android:layout_alignBottom="@+id/reg_mid_name_field"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reg_mid_name_field"
+        android:layout_alignLeft="@+id/reg_mid_hotel_field"
+        android:layout_alignStart="@+id/reg_mid_hotel_field"
+        android:text="Hotel Name"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/reg_mid_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tv_mobile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_conform_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password_field"
+        android:layout_alignLeft="@+id/confirm_pwd_field"
+        android:layout_alignStart="@+id/confirm_pwd_field"
+        android:text="Confirm Password"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Mobile No"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:layout_below="@+id/reg_mid_name_field"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/password_field"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:theme="@style/MyButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
